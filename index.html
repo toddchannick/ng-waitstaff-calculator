@@ -19,9 +19,9 @@
 
 	<div id="wrapper" ng-controller="myController">
 		<div class="table meal-details">
-			<div class="div-header">Enter the Meal Details</div>
+			<div class="div-header">Meal Details: <span id="blue">Meal {{titleMealCount}}</span></div>
 			<div class="details-form">
-				<span class="meal-number">Meal Number {{titleMealCount}}:</span>
+				<span>Please enter the following:</span>
 
 				<form name="mealForm" id="mealForm" class="details" ng-submit="addTransaction(); results=true; counter=true">
 					<label for="price">
@@ -46,7 +46,7 @@
 		</div>
 
 		<div class="table customer-charges">
-			<div class="div-header">Customer Charges</div>
+			<div class="div-header">Customer Charges: <span id="blue">Meal {{mealCount || '1'}}</span></div>
 			<div class="charges">
 				<p>Subtotal: <span class="results" ng-show="results">{{currentSubtotal | currency}}</span></p>
 				<p>Tip: <span class="results" ng-show="results">{{currentTip | currency}}</span></p>
