@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="angular/angular.min.js"></script>
+	<script src="angular/angular.min.js.map"></script>
+	<script src="app.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Waitstaff Calculator</title>
+</head>
+
+<body ng-app="myApp">
+	
+		<header>
+			<div id="title">Waitstaff Calculator<span id="subscript">v 1.0</span></div>
+		</header>
+	
+
+	<div id="wrapper" ng-controller="myController">
+		<div class="table meal-details">
+			<div class="div-header">Enter the Meal Details</div>
+			<div class="details-form">
+				<span class="meal-number">Meal Number {{titleMealCount}}:</span>
+
+				<form name="mealForm" id="mealForm" class="details" ng-submit="addTransaction(); results=true; counter=true">
+					<label for="price">
+						<span>Base Meal Price: $</span>
+					</label>
+						<input type="number" id="price" name="price" ng-model="price" min="0" step=".01" placeholder="0.00" required/>
+					<br>
+					<label for="tax">
+						<span>Tax Rate: %</span>
+					</label>
+						<input type="number" id="tax" name="tax" ng-model="tax" placeholder="0.00" min="0" max="100" step=".01" required/>
+					<br>
+					<label for="tip">
+						<span>Tip Percentage: %</span>
+					</label>
+						<input type="number" id="tip" name="tip" ng-model="tip" placeholder="0.00" min="0" max="100" step=".01" required/>
+					<br><br><hr><br><br>
+					<button type="submit" class="hvr-underline-from-left">Add Meal</button>
+					<button type="reset" ng-click="cancelForm()" class="hvr-underline-from-left">Cancel</button>
+				</form>
+			</div>
+		</div>
+
+		<div class="table customer-charges">
+			<div class="div-header">Customer Charges</div>
+			<div class="charges">
+				<p>Subtotal: <span class="results" ng-show="results">{{currentSubtotal | currency}}</span></p>
+				<p>Tip: <span class="results" ng-show="results">{{currentTip | currency}}</span></p>
+				<hr>
+				<p><strong>Total: </strong><span class="results" ng-show="results">{{currentTotal | currency}}</span></p>
+			</div>
+		</div>
+
+		<div class="table earnings-info">
+			<div class="div-header">Cumulative Earnings Info</div>
+			<div class="earnings">
+				<p><strong>Tip Total: </strong><span class="results" ng-show="counter">{{tipTotal | currency}}</span></p>
+				<p><strong>Meal Count: </strong><span class="results" ng-show="counter">{{mealCount}}</span></p>
+				<p><strong>Average Tip Per Meal: </strong><span class="results" ng-show="counter">{{tipAvg | currency}}</span></p>
+			</div>
+		</div>
+		<div class="lower">
+			<button class="reset-all hvr-underline-from-left" ng-click="resetAll()">Reset All</button>
+		</div>
+
+	</div>
+	
+</body>
+
+</html>
