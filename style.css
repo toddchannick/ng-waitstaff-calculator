@@ -13,41 +13,41 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 
 ul {
-	display:block;
-	list-style: none;
+  display:block;
+  list-style: none;
 }
 
 
@@ -59,6 +59,7 @@ body {
 }
 
 header {
+<<<<<<< HEAD
 	padding-top:.8em;
 	padding-bottom:.2em;
 	background: #283040;
@@ -71,36 +72,56 @@ header {
 	margin-left:auto;
 	margin-right:auto;
 	min-width:860px;
+=======
+  padding-top:.8em;
+  padding-bottom:.2em;
+  background: #283040;
+  border-bottom:4px solid #4065B2;
+}
+
+#wrapper {
+  width:65%;
+  margin-top:5em;
+  margin-left:auto;
+  margin-right:auto;
+  min-width:860px;
+>>>>>>> master
 }
 
 #title {
-	margin-left:2em;
-	color:white;
-	font-size:3em;
-	font-weight:300;
+  margin-left:2em;
+  color:white;
+  font-size:3em;
+  font-weight:300;
 }
 
 #subscript {
-	color:#A1BFFF;
-	font-size:30%;
-	font-style:italic;
+  color:#A1BFFF;
+  font-size:30%;
+  font-style:italic;
 }
 
 .table {
+<<<<<<< HEAD
 	background-color:#B5CDFF;
 	border:2px solid black;
+=======
+  background-color:rgba(181,205,255,.6);
+  border:2px solid black;
+>>>>>>> master
 }
 
 .meal-details {
-	position:relative;
-	float:left;
-	clear:both;
-	height:22em;
-	width:25em;
-	border-bottom-left-radius: 1em;
+  position:relative;
+  float:left;
+  clear:both;
+  height:22em;
+  width:25em;
+  border-bottom-left-radius: 1em;
 }
 
 .div-header {
+<<<<<<< HEAD
 	background-color:#283040;
 	color:white;
 	width:100%;
@@ -109,53 +130,63 @@ header {
 	line-height:2em;
 	font-weight:300;
 	border-bottom:4px solid #4065B2;
+=======
+  background-color:#283040;
+  color:white;
+  width:100%;
+  text-indent:1em;
+  height:2em;
+  line-height:2em;
+  font-weight:300;
+  border-bottom:4px solid #4065B2;
+>>>>>>> master
 }
 
 .customer-charges {
-	position:relative;
-	float:left;
-	margin-left:2em;
-	height:10em;
-	width:25em;
+  position:relative;
+  float:left;
+  margin-left:2em;
+  height:10em;
+  width:25em;
 }
 
 .earnings-info {
-	position:relative;
-	float:left;
-	margin-left:2em;
-	margin-top:2em;
-	height:9.7em;
-	width:25em;
+  position:relative;
+  float:left;
+  margin-left:2em;
+  margin-top:2em;
+  height:9.7em;
+  width:25em;
 }
 
 .details-form {
-	width:90%;
-	margin-left:auto;
-	margin-right:auto;
-	height:17em;
-	/*background-color:black;*/
-	margin-top:1.5em;
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+  height:17em;
+  /*background-color:black;*/
+  margin-top:1.5em;
 }
 
 
 
 
 .charges {
-	width:90%;
-	margin-left:auto;
-	margin-right:auto;
-	height:5em;
-	/*background-color:black;*/
-	margin-top:1em;
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+  height:5em;
+  /*background-color:black;*/
+  margin-top:1em;
 }
 
 .earnings {
-	width:90%;
-	margin-left:auto;
-	margin-right:auto;
-	height:4.7em;
-	/*background-color:black;*/
-	margin-top:1em;
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+  height:4.7em;
+  /*-background-color:black;-*/
+  margin-top:1em;
 }
 
 .meal-number {
@@ -196,7 +227,7 @@ header {
     margin-bottom: 16px;
     margin-top: 2px;
     outline: 0 none;
-	padding-left:.5em;
+  padding-left:.5em;
     width: 50%;
     font-size: 13px;
     line-height:15px;
@@ -220,13 +251,13 @@ header {
 
 
 .charges {
-	font-size:13px;
-	line-height:2.4em;
+  font-size:13px;
+  line-height:2.4em;
 }
 
 .earnings {
-	font-size:13px;
-	line-height:2.4em;
+  font-size:13px;
+  line-height:2.4em;
 }
 
 hr {
@@ -264,11 +295,29 @@ button::-moz-focus-inner{
 
 .lower button {
   margin-right:1.3em;
+<<<<<<< HEAD
   float:right;
 }
 
 #blue {
   color:#B5CDFF;
+=======
+  float:right;
+}
+
+#blue {
+  color:#B5CDFF;
+}
+
+.navigate {
+  float:right;
+  margin-right:1em;
+}
+
+#back, #forward {
+  cursor:pointer;
+  margin-left:1em;
+>>>>>>> master
 }
 
 

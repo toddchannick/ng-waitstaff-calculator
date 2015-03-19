@@ -19,7 +19,11 @@
 
 	<div id="wrapper" ng-controller="myController">
 		<div class="table meal-details">
+<<<<<<< HEAD
 			<div class="div-header">Meal Details: <span id="blue">Meal {{titleMealCount}}</span></div>
+=======
+			<div class="div-header">Meal Details: <span id="blue">Meal {{mealCount+1}}</span></div>
+>>>>>>> master
 			<div class="details-form">
 				<span>Please enter the following:</span>
 
@@ -46,29 +50,32 @@
 		</div>
 
 		<div class="table customer-charges">
+<<<<<<< HEAD
 			<div class="div-header">Customer Charges: <span id="blue">Meal {{mealCount || '1'}}</span></div>
+=======
+			<div class="div-header">Customer Charge Overview: <span id="blue">Meal {{titleMealCount}}</span><span id="blue" class="navigate"><span ng-click="back()" id="back"> &lt; </span><span id="forward" ng-click="forward()"> &gt; </span></span> </div>
+>>>>>>> master
 			<div class="charges">
-				<p>Subtotal: <span class="results" ng-show="results">{{currentSubtotal | currency}}</span></p>
-				<p>Tip: <span class="results" ng-show="results">{{currentTip | currency}}</span></p>
+				<p>Subtotal: <span  ng-repeat="meal in meals" class="results" ng-show="results; $index==(titleMealCount-1)">{{meal.subtotal | currency}}</span></p>
+				<p>Tip: <span  ng-repeat="meal in meals" class="results" ng-show="results; $index==(titleMealCount-1)">{{meal.tip | currency}}</span></p>
 				<hr>
-				<p><strong>Total: </strong><span class="results" ng-show="results">{{currentTotal | currency}}</span></p>
+				<p><strong>Total: </strong><span  ng-repeat="meal in meals" class="results" ng-show="results; $index==(titleMealCount-1)">{{meal.total | currency}}</span></p>
 			</div>
 		</div>
 
 		<div class="table earnings-info">
 			<div class="div-header">Cumulative Earnings Info</div>
 			<div class="earnings">
-				<p><strong>Tip Total: </strong><span class="results" ng-show="counter">{{tipTotal | currency}}</span></p>
-				<p><strong>Meal Count: </strong><span class="results" ng-show="counter">{{mealCount}}</span></p>
-				<p><strong>Average Tip Per Meal: </strong><span class="results" ng-show="counter">{{tipAvg | currency}}</span></p>
+				<p>Tip Total: <span class="results" ng-show="counter">{{tipTotal | currency}}</span></p>
+				<p>Meal Count: <span class="results" ng-show="counter">{{mealCount}}</span></p>
+				<p>Average Tip Per Meal: <span class="results" ng-show="counter">{{tipAvg | currency}}</span></p>
 			</div>
 		</div>
 		<div class="lower">
 			<button class="reset-all hvr-underline-from-left" ng-click="resetAll()">Reset All</button>
 		</div>
 
-	</div>
-	
+	</div>	
 </body>
 
 </html>
