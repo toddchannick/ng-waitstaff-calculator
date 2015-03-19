@@ -19,11 +19,7 @@
 
 	<div id="wrapper" ng-controller="myController">
 		<div class="table meal-details">
-<<<<<<< HEAD
-			<div class="div-header">Meal Details: <span id="blue">Meal {{titleMealCount}}</span></div>
-=======
 			<div class="div-header">Meal Details: <span id="blue">Meal {{mealCount+1}}</span></div>
->>>>>>> master
 			<div class="details-form">
 				<span>Please enter the following:</span>
 
@@ -50,11 +46,7 @@
 		</div>
 
 		<div class="table customer-charges">
-<<<<<<< HEAD
-			<div class="div-header">Customer Charges: <span id="blue">Meal {{mealCount || '1'}}</span></div>
-=======
 			<div class="div-header">Customer Charge Overview: <span id="blue">Meal {{titleMealCount}}</span><span id="blue" class="navigate"><span ng-click="back()" id="back"> &lt; </span><span id="forward" ng-click="forward()"> &gt; </span></span> </div>
->>>>>>> master
 			<div class="charges">
 				<p>Subtotal: <span  ng-repeat="meal in meals" class="results" ng-show="results; $index==(titleMealCount-1)">{{meal.subtotal | currency}}</span></p>
 				<p>Tip: <span  ng-repeat="meal in meals" class="results" ng-show="results; $index==(titleMealCount-1)">{{meal.tip | currency}}</span></p>
