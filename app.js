@@ -73,7 +73,7 @@ angular.module('myApp', [])
 	};
 
 
-	/*BACK BUTTON FUNCTIONALITY ON CLICK - navigates all meals added*/
+	/*-BACK BUTTON FUNCTIONALITY ON CLICK - navigates all meals added-*/
 	$scope.back = function(){
 		console.log($scope.titleMealCount);
 		if ($scope.titleMealCount>1){
@@ -81,7 +81,7 @@ angular.module('myApp', [])
 		}
 	};
 
-	/*BACK BUTTON FUNCTIONALITY ON CLICK - navigates all meals added*/
+	/*-BACK BUTTON FUNCTIONALITY ON CLICK - navigates all meals added-*/
 	$scope.forward = function(){ 
 		console.log($scope.titleMealCount);
 		if ($scope.titleMealCount < $scope.meals.length){
